@@ -1,0 +1,71 @@
+﻿@model RITFacultyV1.ViewModels.ProgramViewModel
+
+<h1>@Model.Title</h1>
+
+<div style="padding: 1.5%; clear:both;"></div>
+
+<h2>Undergraduate</h2>
+<div class="accordion">
+    @foreach (var under in Model.Undergraduate)
+    {
+        <h3 style="font-size:medium; font-weight:bold">
+            @under.title
+        </h3>
+        <div>
+        @foreach (var conc in under.concentrations)
+        {
+            <ul>
+                <li>@conc</li>
+            </ul>
+        }
+        </div>
+    }
+</div>
+
+<div style="padding: 1%; clear:both;"></div>
+
+    <h2>Graduate</h2>
+
+    <div class="accordion">
+        <h3 style="font-size:medium; font-weight:bold">
+            @Model.Graduate[0].degreeName
+        </h3>
+        <div>
+        @foreach (var certi in Model.Graduate[0].availableCertificates)
+        {
+            <ul>
+                <li>@certi</li>
+            </ul>
+        }
+        </div>
+
+        @for (int i = 1; i < Model.Graduate.Count; i++)
+        {
+            <h3 style="font-size:medium; font-weight:bold">
+                @Model.Graduate[i].title
+            </h3>
+            <div>
+            @foreach (var conc in Model.Graduate[i].concentrations)
+            {
+                <ul>
+                    <li>@conc</li>
+                </ul>
+            }
+            </div>
+        }
+    </div>
+
+<div style="padding: 1.25%; clear:both;"></div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+        });
+    </script>
+}

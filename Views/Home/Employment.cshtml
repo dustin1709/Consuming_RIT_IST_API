@@ -1,0 +1,41 @@
+﻿@model RITFacultyV1.ViewModels.EmploymentViewModel
+
+<h1>@Model.Title</h1>
+<p>Employment table reflects our students employment after RIT.</p>
+
+<div style="padding: 2%; clear:both;"></div>
+
+<div style="margin: 1%; padding: 1%; border: 2px solid black;">
+    <table id="table" class="display cell-border compact">
+        <thead>
+            <tr>
+                <th>Employer</th>
+                <th>Degree</th>
+                <th>City</th>
+                <th>Title</th>
+                <th>Start Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employment in Model.Employment)
+            {
+                <tr>
+                    <td>@employment.employer</td>
+                    <td>@employment.degree</td>
+                    <td>@employment.city</td>
+                    <td>@employment.title</td>
+                    <td>@employment.startDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div style="padding: 3.5%; clear:both;"></div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+}

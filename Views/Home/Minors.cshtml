@@ -1,0 +1,17 @@
+﻿@model RITFacultyV1.ViewModels.UgMinorsViewModel
+
+<h1>@Model.Title</h1>
+<p>Click on minor to view details.</p>
+<div style="padding: 1%; clear:both;"></div>
+<ul>
+@foreach (var minors in Model.UgMinors)
+{
+    string x = "";
+    @foreach (var min in minors.courses)
+    {
+        x += ("<li>"+min+"</li>"); 
+    }
+    <li><a href="#" data-featherlight="<h4>@minors.title</h4><p>@minors.description</p><ul>@x</ul>">@minors.name</a></li>
+}
+</ul>
+<div style="padding: 1.25%; clear:both;"></div>
