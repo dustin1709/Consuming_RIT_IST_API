@@ -1,0 +1,58 @@
+[
+  {
+    "username": "gpavks",
+    "name": "Garret Arcoraci",
+    "tagline": "",
+    "imagePath": "https://ist.rit.edu/assets/img/people/gpavks.jpg",
+    "title": "Lecturer",
+    "interestArea": "cit nsa ist",
+    "office": "GOL 2315",
+    "website": "",
+    "phone": "5854757854",
+    "email": "gpavks@rit.edu",
+    "twitter": "",
+    "facebook": ""
+  },
+  {
+    "username": "ciiics",
+    "name": "Catherine Beaton",
+    "tagline": "",
+    "imagePath": "https://ist.rit.edu/assets/img/people/ciiics.jpg",
+    "title": "Associate Professor",
+    "interestArea": "hci hcc cit ist",
+    "office": "GOL 2621",
+    "website": "http://www.ist.rit.edu/~cib",
+    "phone": "585-281-6162",
+    "email": "catherine.beaton@rit.edu",
+    "twitter": "",
+    "facebook": ""
+  },
+  {
+    "username": "cbbics",
+    "name": "Charlie Border",
+    "tagline": "",
+    "imagePath": "https://ist.rit.edu/assets/img/people/cbbics.jpg",
+    "title": "Associate Professor",
+    "interestArea": "cit ist nsa",
+    "office": "GOL 2615",
+    "website": "",
+    "phone": "585-475-7946",
+    "email": "cbbics@rit.edu",
+    "twitter": "",
+    "facebook": ""
+  },
+  {
+    "username": "sgcics",
+    "name": "Stephen Cady",
+    "tagline": "",
+    "imagePath": "https://ist.rit.edu/assets/img/people/sgcics.jpg",
+    "title": "Visiting Lecturer",
+    "interestArea": "ist, hcc, wmc",
+    "office": "GOL-2627",
+    "website": "",
+    "phone": null,
+    "email": "sgcics@rit.edu",
+    "twitter": null,
+    "facebook": ""
+  }
+]
