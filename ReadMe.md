@@ -1,4 +1,4 @@
-API data added besides requirement: http://ist.rit.edu/api/minors/
+REST API: http://ist.rit.edu/api/
 
 Plugins used:
 
